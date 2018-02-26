@@ -1,0 +1,96 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> Form </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet" title="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" title="text/css">
+</head>
+
+<body>
+<header>
+  <div class="nav">
+  <h1 class="main-nav"> The Code Review </h1>
+  </div>
+</header>
+
+<main>
+  <form action="index.html" method="post">
+    <div class="signuptext">
+      <h2> Signup for our newsletter </h2>
+      <p> Get the latest news on how your code is doing right in your inbox </p>
+    </div>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+      <div class="contact-info">
+        <label for="fullname">Full Name</label><input type="text" id="fullname" name="user_name" placeholder="Required">
+        <label for="email">Email Address </label><input type="email" id="email" name="user_email" placeholder="Required">
+        <label for="telephone">Phone Number</label><input type="tel" id="telephone" name="user_telephone" placeholder="Required">
+        <label for="streetadd">Street Address </label><input type="text" id="streetadd" name="user_streetadd" placeholder="Required">
+        <label for="city">City </label><input type="text" id="city" name="user_city" placeholder="Required">
+
+        <label for="state">State </label>
+        <select id="state" name="user_state" class="user_op">
+        <option value="CS"> Choose State </option>
+          <optgroup label="West Malaysia">
+            <option value="johor"> Johor </option>
+            <option value="kedah"> Kedah </option>
+            <option value="kelantan"> Kelantan </option>
+            <option value="melaka"> Melaka </option>
+            <option value="negerisembilan"> Negeri Sembilan </option>
+            <option value="pahang"> Pahang </option>
+            <option value="penang"> Penang </option>
+            <option value="perlis"> Perlis </option>
+            <option value="selangor"> Selangor </option>
+            <option value="terengganu"> Terengganu </option>
+            <option value="wilayahpersekutuan"> Wilayah Persekutuan </option>
+          </optgroup>
+          <optgroup label="East Malaysia">
+            <option value="sabah"> Sabah </option>
+            <option value="sarawak"> Sarawak </option>
+          </optgroup>
+        </select>
+
+        <label for="zipcode">Zip Code </label><input type="number" id="zipcode" name="user_zipcode" placeholder="Required">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend> Newsletter </legend>
+      <p class="news-descrb"><label class="description"> Select the newsletters you would like to receive </label></p>
+      <ul>
+      <li><input type="checkbox" id="html_news" name="select_html" value="Select Newsletter">
+        <label class="light" for="html_news"> HTML News </label></li>
+      <li><input type="checkbox" id="css_news" name="select_css" value="Select Newsletter">
+        <label class="light" for="css_news"> CSS News </label></li>
+      <li><input type="checkbox" id="java_news" name="select_java" value="Select Newsletter">
+        <label class="light" for="java_news"> Javascript News </label></li>
+      </ul>
+
+      <p class="news-descrb"><label class="description"> Newsletter format </label></p>
+      <ul>
+      <li><input type="radio" id="htmlformat" value="html_format" name="newsletter_format">
+        <label class="light" for="htmlformat"> HTML </label></li>
+      <li><input type="radio" id="textformat" value="plaintext_format" name="newsletter_format">
+        <label class="light" for="textformat"> Plain text </label></li>
+      </ul>
+      <p class="news-descrb"><label class="description" for="othertopic"> Other topics you'd like to hear about </label></p>
+        <textarea id="othertopic" name="other_topic"></textarea>
+    </fieldset>
+
+    <button type ="submit"> Sign Up </button>
+
+  </form>
+</main>
+
+<footer>
+  <p class="copyright"> Copyright The Code Review </p>
+</footer>
+
+</body>
+
+</html>
