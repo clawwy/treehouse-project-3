@@ -222,7 +222,8 @@ form {
 }
 
 .contact-info select {
-  width: 65%;
+  width: 70%;
+  margin-left: -5px;
 }
 
 
