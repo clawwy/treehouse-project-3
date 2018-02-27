@@ -27,14 +27,14 @@
     <fieldset>
       <legend>Contact Information</legend>
       <div class="contact-info">
-        <label for="fullname">Full Name</label><input type="text" id="fullname" name="user_name" placeholder="Required">
-        <label for="email">Email Address </label><input type="email" id="email" name="user_email" placeholder="Required">
-        <label for="telephone">Phone Number</label><input type="tel" id="telephone" name="user_telephone" placeholder="Required">
-        <label for="streetadd">Street Address </label><input type="text" id="streetadd" name="user_streetadd" placeholder="Required">
-        <label for="city">City </label><input type="text" id="city" name="user_city" placeholder="Required">
+        <label for="fullname">Full Name</label><input type="text" id="fullname" name="user_name" placeholder="Required" required>
+        <label for="email">Email Address </label><input type="email" id="email" name="user_email" placeholder="Required" required>
+        <label for="telephone">Phone Number</label><input type="tel" id="telephone" name="user_telephone" placeholder="Required" required>
+        <label for="streetadd">Street Address </label><input type="text" id="streetadd" name="user_streetadd" placeholder="Required" required>
+        <label for="city">City </label><input type="text" id="city" name="user_city" placeholder="Required" required>
 
         <label for="state">State </label>
-        <select id="state" name="user_state" class="user_op">
+        <select id="state" name="user_state" class="user_op" disabled>
         <option value="CS"> Choose State </option>
           <optgroup label="West Malaysia">
             <option value="johor"> Johor </option>
@@ -55,7 +55,7 @@
           </optgroup>
         </select>
 
-        <label for="zipcode">Zip Code </label><input type="number" id="zipcode" name="user_zipcode" placeholder="Required">
+        <label for="zipcode">Zip Code </label><input type="number" id="zipcode" name="user_zipcode" placeholder="Required" required>
       </div>
     </fieldset>
 
